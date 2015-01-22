@@ -18,11 +18,13 @@ describe('testing basic functions', function(){
         expect(returnTrue()).toBe(true);
     });
 
-   it("should be 1",function(){
+   it("should be 1",function() {
+        expect(letterToNumber("D")).toBe(1);
+   });
 
-       }
-
-   );
+    it("should be 4",function() {
+        expect(calc("A",5,"A",4,"A",1234)).toBe(4.0);
+    });
 });
 
 

@@ -45,8 +45,7 @@ var getLetter = function(i){
 }
 
 calc = function(course1,credits1,course2,credits2,course3,credits3){
-
-    return (letterToNumber(course1)+letterToNumber(course2)+letterToNumber(course3))/(credits1+credits2+credits3);
+    return (letterToNumber(course1)*credits1+letterToNumber(course2)*credits2+letterToNumber(course3)*credits3)/(credits1+credits2+credits3);
 }
 
 letterToNumber = function(course){
