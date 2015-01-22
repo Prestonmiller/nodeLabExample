@@ -34,7 +34,7 @@ app.use(express.static(__dirname + '/public'));
 
 
 app.get('/kittens', function(req, res){
-    res.send("Page under construction!");
+    res.send("It changed!");
 });
 
 app.get('/about', function(req, res){
@@ -57,7 +57,7 @@ app.get('/', function(req, res){
 
 // Wildcard catches requests for non-existent routes or files and responds with a 404 message (or an html page if you want to make a custom one!)
 app.get('*', function(req, res){
-    res.send("404");
+    res.send("Nope");
 //    res.sendFile('404.html', options);
 });
 
