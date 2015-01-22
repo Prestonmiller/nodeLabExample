@@ -17,6 +17,12 @@ describe('testing basic functions', function(){
     it('this test should Pass!', function(){
         expect(returnTrue()).toBe(true);
     });
+
+   it("should be 1",function(){
+
+       }
+
+   );
 });
 
 

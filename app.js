@@ -55,6 +55,14 @@ app.get('/', function(req, res){
     res.sendFile('index.html', options);
 });
 
+app.post('/calc', function(req, res){
+    res.send("Your GPA is: "+tools.calc(req.body.classa, req.body.credita,req.body.classb, req.body.creditb, req.body.classc, req.body.creditc));
+});
+
+app.get('/calc', function(req, res){
+    res.sendFile('calc.html', options);
+});
+
 // Wildcard catches requests for non-existent routes or files and responds with a 404 message (or an html page if you want to make a custom one!)
 app.get('*', function(req, res){
     res.send("Nope");
