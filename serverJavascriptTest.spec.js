@@ -1,26 +1,10 @@
 
 //Just some example testing.
 describe('testing basic functions', function(){
-    it('should return the correct string length', function(){
-        expect(testStringLength("kittens")).toEqual(7);
-    });
 
-    it('returnKittens should return kittens', function(){
-        expect(returnKittens()).toBe("kittens");
-    });
-
-    //this test should fail.
-//    it('this test should fail!', function(){
-//        expect(returnKittens()).toBe("Not Kittens!");
-//    });
-
-    it('this test should Pass!', function(){
-        expect(returnTrue()).toBe(true);
-    });
-
-   it("should be 1",function() {
+    it("should be 1",function() {
         expect(letterToNumber("D")).toBe(1);
-   });
+    });
 
     it("should be 1.3",function() {
         expect(letterToNumber("D+")).toBe(1.3);
@@ -52,10 +36,6 @@ describe('testing basic functions', function(){
 
     it("should be 3.7",function() {
         expect(letterToNumber("A-")).toBe(3.7);
-    });
-
-    it("should be 0",function() {
-        expect(letterToNumber("A-ds")).toBe(0);
     });
 
     it("should be 4",function() {
@@ -98,20 +78,4 @@ describe('testing basic functions', function(){
         expect(calc("A-",5,"A-",4,"A-",1234)).toBe(3.7);
     });
 
-    it("should be a",function() {
-        expect(getLetter(0)).toBe("a");
-    });
-
-    it("should be b",function() {
-        expect(getLetter(1)).toBe("b");
-    });
-
-    it("should be c",function() {
-        expect(getLetter(2)).toBe("c");
-    });
-
-
 });
-
-
-

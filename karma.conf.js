@@ -14,7 +14,9 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-      'public/javascript/*.js'
+      'public/javascript/*.js',
+        'serverJavascriptTest.js',
+        'serverJavascriptTest.spec.js'
     ],
 
     // list of files to exclude
@@ -24,7 +26,8 @@ module.exports = function(config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
-      'public/javascript/*[!spec].js' : 'coverage'
+      'public/javascript/*[!spec].js' : 'coverage',
+        'serverJavascriptTest.js': 'coverage'
     },
 
     // test results reporter to use
